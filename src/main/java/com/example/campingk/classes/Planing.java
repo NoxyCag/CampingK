@@ -7,7 +7,6 @@ import java.time.temporal.TemporalAmount;
 import java.util.Date;
 
 public class Planing {
-    int idCreneau;
     Date dateCreneau;
     Time heureCreneau;
     Time dureeCreneau;
@@ -20,8 +19,6 @@ public class Planing {
     String nomRueLieu;
     String villeLieu;
 
-    public Planing(int id, Date date, Time heure, Time duree, int places, String animationNom, String animateurPrenom, String animateurNom, String libelle, String numRue, String nomRue, String ville){
-        idCreneau = id;
         dateCreneau = date;
         heureCreneau = heure;
         dureeCreneau = duree;
@@ -36,7 +33,6 @@ public class Planing {
     }
     @Override
     public String toString() {
-        return idCreneau + ": " + nomAnimation + " - dirigé par " + prenomAnimateur + " " + nomAnimateur + " (" + placesCreneau + " places)\n"
                 + "le " + dateCreneau + " à " + heureCreneau + " pendant " + dureeCreneau + "\n"
                 + libelleLieu + " - " + numRueLieu + " " + nomRueLieu + ", " + villeLieu;
     }
