@@ -4,24 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="027ab735-ffcd-4d22-bd6a-1df0840e0d37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/classes/Animateur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/classes/Lieu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/classes/Planing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/SigninController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/SigninController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/campingk/animateurs.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/campingk/animateurs.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/campingk/animations.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/campingk/animations.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/campingk/lieux.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/campingk/lieux.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/campingk/planing.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/campingk/planing.fxml" afterDir="false" />
-    </list>
-    <list id="92edb68a-1453-4aa5-9b62-35d9ac42b230" name="Changes by ncaglioti" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/campingk/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/AnimateursController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/AnimateursController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/AnimationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/AnimationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/LieuxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/LieuxController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/PlaningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/PlaningController.java" afterDir="false" />
-    </list>
+    <list default="true" id="027ab735-ffcd-4d22-bd6a-1df0840e0d37" name="Changes" comment="" />
+    <list id="92edb68a-1453-4aa5-9b62-35d9ac42b230" name="Changes by ncaglioti" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,6 +82,7 @@
       <workItem from="1729458221253" duration="6000" />
       <workItem from="1729459291908" duration="1395000" />
       <workItem from="1729460889006" duration="397000" />
+      <workItem from="1729462718958" duration="100000" />
     </task>
     <servers />
   </component>
