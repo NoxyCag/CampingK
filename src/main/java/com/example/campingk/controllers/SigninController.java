@@ -1,16 +1,15 @@
 package com.example.campingk.controllers;
 
 import com.example.campingk.ConnexionBDD;
-import javafx.scene.control.Alert;
+import javafx.scene.control.*;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import com.example.campingk.App;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
@@ -57,7 +56,6 @@ public class SigninController {
 
             if(mdp.getText().equals(confMdp.getText()) && !login.getText().isEmpty() && nbCarac && min && maj && chiffre && caracSpe) {
 
-                // Connexion à la base de données
                 Connection conn = ConnexionBDD.initialiserConnexion();
 
                 if (conn != null) {
@@ -87,6 +85,14 @@ public class SigninController {
                             ex.printStackTrace();
                         }
                     }
+                } else {
+                    login.setText("");
+                    mdp.setText("");
+                    confMdp.setText("");
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("Erreur");
+                    alert.setContentText("Impossible de créer le compte");
+                    alert.showAndWait();
                 }
             } else {
                 login.setText("");

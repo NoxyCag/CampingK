@@ -5,10 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="027ab735-ffcd-4d22-bd6a-1df0840e0d37" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/classes/Animateur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/classes/Lieu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/classes/Planing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/SigninController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/SigninController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/campingk/animateurs.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/campingk/animateurs.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/campingk/animations.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/campingk/animations.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/campingk/lieux.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/campingk/lieux.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/campingk/planing.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/campingk/planing.fxml" afterDir="false" />
     </list>
-    <list id="f0e3ebe1-5a10-4147-9103-13d666b18af9" name="Changes by ncaglioti" comment="" />
+    <list id="92edb68a-1453-4aa5-9b62-35d9ac42b230" name="Changes by ncaglioti" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/campingk/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/AnimateursController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/AnimateursController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/AnimationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/AnimationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/LieuxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/LieuxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/PlaningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/campingk/controllers/PlaningController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,30 +37,33 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2nFCSXeDxiJrraqScNysURJHXp1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.app.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/tneusch/IdeaProjects/CampingK",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Animation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AnimationController.executor&quot;: &quot;Run&quot;,
+    &quot;Application.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;liberica-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ncagl/IdeaProjects/TestsUnitaires&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="app" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.campingk.App" />
@@ -60,7 +76,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-liberica-21.0.2-4caba194b151-c80c24ab" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -72,7 +89,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728559438840</updated>
-      <workItem from="1728559439844" duration="10860000" />
+      <workItem from="1728559439844" duration="11661000" />
+      <workItem from="1729147871606" duration="61000" />
+      <workItem from="1729164186409" duration="11470000" />
+      <workItem from="1729339872475" duration="4286000" />
+      <workItem from="1729420906591" duration="7753000" />
+      <workItem from="1729454528779" duration="3652000" />
+      <workItem from="1729458221253" duration="6000" />
+      <workItem from="1729459291908" duration="1395000" />
+      <workItem from="1729460889006" duration="397000" />
     </task>
     <servers />
   </component>

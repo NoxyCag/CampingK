@@ -30,10 +30,10 @@
             </Button>
          </children>
       </Pane>
-      <ListView layoutX="14.0" layoutY="66.0" prefHeight="701.0" prefWidth="813.0" style="-fx-background-color: white;" />
-      <Button layoutX="14.0" layoutY="777.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="209.0" style="-fx-background-color: #fff7e2;" text="Semaine précédente" textFill="#73523f" />
-      <Button layoutX="618.0" layoutY="777.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="209.0" style="-fx-background-color: #fff7e2;" text="Semaine précédente" textFill="#73523f" />
-      <TextField layoutX="232.0" layoutY="777.0" prefHeight="25.0" prefWidth="377.0" style="-fx-background-color: #fff7e2;" />
+      <ListView fx:id="listView" onMouseClicked="#listViewClicked" layoutX="14.0" layoutY="66.0" prefHeight="701.0" prefWidth="813.0" style="-fx-background-color: white;" />
+      <Button fx:id="boutonSemainePrecedente" layoutX="14.0" layoutY="777.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="209.0" style="-fx-background-color: #fff7e2;" text="Semaine précédente" textFill="#73523f" />
+      <Button fx:id="boutonSemaineSuivante" layoutX="618.0" layoutY="777.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="209.0" style="-fx-background-color: #fff7e2;" text="Semaine suivante" textFill="#73523f" />
+      <TextField fx:id="textFieldSemaine" layoutX="232.0" layoutY="777.0" prefHeight="25.0" prefWidth="377.0" style="-fx-background-color: #fff7e2;" />
       <Label layoutX="877.0" layoutY="92.0" prefHeight="25.0" prefWidth="99.0" text="Animation" textFill="#fff7e2">
          <font>
             <Font name="Sylfaen" size="16.0" />
@@ -54,30 +54,35 @@
             <Font name="Sylfaen" size="16.0" />
          </font>
       </Label>
-      <TextField layoutX="1167.0" layoutY="408.0" prefHeight="25.0" prefWidth="243.0" style="-fx-background-color: white;" />
+      <TextField fx:id="textFieldDuree" onKeyPressed="#changementValeurs" layoutX="1167.0" layoutY="408.0" prefHeight="25.0" prefWidth="243.0" style="-fx-background-color: white;" />
       <Label layoutX="876.0" layoutY="314.0" prefHeight="25.0" prefWidth="99.0" text="Date" textFill="#fff7e2">
          <font>
             <Font name="Sylfaen" size="16.0" />
          </font>
       </Label>
-      <TextField layoutX="876.0" layoutY="408.0" prefHeight="25.0" prefWidth="243.0" style="-fx-background-color: white;" />
-      <Button layoutX="878.0" layoutY="705.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Supprimer" textFill="#984646">
+      <TextField fx:id="textFieldHeure" onKeyPressed="#changementValeurs" layoutX="876.0" layoutY="408.0" prefHeight="25.0" prefWidth="243.0" style="-fx-background-color: white;" />
+      <Button fx:id="butonSupprimer" layoutX="1017.0" layoutY="706.0" mnemonicParsing="false" onMouseClicked="#supprimerClicked" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Supprimer" textFill="#984646">
          <font>
             <Font name="Sylfaen" size="16.0" />
          </font></Button>
-      <Button layoutX="1087.0" layoutY="705.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Modifier" textFill="#887940">
+      <Button fx:id="butonModifier" layoutX="1158.0" layoutY="705.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Modifier" textFill="#887940">
          <font>
             <Font name="Sylfaen" size="16.0" />
          </font></Button>
-      <Button layoutX="1295.0" layoutY="705.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Ajouter" textFill="#3f7342">
+      <Button fx:id="butonAjouter" layoutX="1295.0" layoutY="705.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Ajouter" textFill="#3f7342">
          <font>
             <Font name="Sylfaen" size="16.0" />
          </font></Button>
-      <DatePicker layoutX="877.0" layoutY="343.0" prefHeight="25.0" prefWidth="534.0" style="-fx-background-color: #fff7e2;" />
-      <ComboBox layoutX="876.0" layoutY="117.0" prefHeight="25.0" prefWidth="534.0" />
-      <ComboBox layoutX="876.0" layoutY="181.0" prefHeight="25.0" prefWidth="398.0" />
-      <Button layoutX="1295.0" layoutY="181.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: white;" text="Ajouter" textFill="#73523f" />
-      <TextField layoutX="876.0" layoutY="247.0" prefHeight="25.0" prefWidth="534.0" style="-fx-background-color: white;" />
+      <Button fx:id="butonAnnuler" layoutX="878.0" layoutY="706.0" mnemonicParsing="false" onMouseClicked="#annulerClicked" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Annuler" textFill="#984646">
+         <font>
+            <Font name="Sylfaen" size="16.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="datePickerDate" layoutX="877.0" layoutY="343.0" prefHeight="25.0" prefWidth="534.0" style="-fx-background-color: #fff7e2;" />
+      <ComboBox fx:id="animation" layoutX="876.0" layoutY="117.0" prefHeight="25.0" prefWidth="534.0" />
+      <ComboBox fx:id="ajouterAnimateur" layoutX="876.0" layoutY="181.0" prefHeight="25.0" prefWidth="398.0" />
+      <Button fx:id="ajouterAnimateurs" layoutX="1295.0" layoutY="181.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: white;" text="Ajouter" textFill="#73523f" />
+      <TextField fx:id="textFieldAnimateursPresents" onKeyPressed="#changementValeurs" layoutX="876.0" layoutY="247.0" prefHeight="25.0" prefWidth="534.0" style="-fx-background-color: white;" />
       <Label layoutX="876.0" layoutY="222.0" prefHeight="25.0" prefWidth="156.0" text="Animateurs présents" textFill="#fff7e2">
          <font>
             <Font name="Sylfaen" size="16.0" />
@@ -88,6 +93,6 @@
             <Font name="Sylfaen" size="16.0" />
          </font>
       </Label>
-      <Spinner layoutX="876.0" layoutY="520.0" prefHeight="25.0" prefWidth="534.0" />
+      <Spinner fx:id="spinnerNombrePlaces" layoutX="876.0" layoutY="520.0" prefHeight="25.0" prefWidth="534.0" />
    </children>
 </Pane>

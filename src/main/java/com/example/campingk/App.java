@@ -54,6 +54,10 @@ public class App extends Application {
         }
     }
 
+    public void lancement(){
+
+    };
+
 
     public static void main(String[] args) {
         launch();

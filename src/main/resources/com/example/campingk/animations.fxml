@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" fx:controller="com.example.campingk.controllers.AnimationController" prefHeight="816.0" prefWidth="1456.0" style="-fx-background-color: #223459;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="816.0" prefWidth="1456.0" style="-fx-background-color: #223459;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.campingk.controllers.AnimationController">
     <children>
         <Pane prefHeight="50.0" prefWidth="1456.0" style="-fx-background-color: #7C8EA6;">
             <children>
@@ -30,36 +30,35 @@
                 </Button>
             </children>
         </Pane>
-        <ListView layoutX="14.0" layoutY="66.0" prefHeight="737.0" prefWidth="813.0" style="-fx-background-color: #fff7e2;" />
+        <ListView fx:id="listView" onMouseClicked="#listViewClicked" layoutX="14.0" layoutY="66.0" prefHeight="737.0" prefWidth="813.0" style="-fx-background-color: #fff7e2;" />
         <Label layoutX="877.0" layoutY="92.0" prefHeight="25.0" prefWidth="99.0" text="Nom" textFill="#fff7e2">
             <font>
                 <Font name="Sylfaen" size="16.0" />
             </font>
         </Label>
-        <TextField layoutX="876.0" layoutY="218.0" prefHeight="25.0" prefWidth="534.0" style="-fx-background-color: #fff7e2;" />
+        <TextField fx:id="textFieldLibelle" onKeyPressed="#changementValeurs" layoutX="876.0" layoutY="218.0" prefHeight="25.0" prefWidth="534.0" style="-fx-background-color: #fff7e2;" />
         <Label layoutX="876.0" layoutY="190.0" prefHeight="25.0" prefWidth="99.0" text="Libelle" textFill="#fff7e2">
             <font>
                 <Font name="Sylfaen" size="16.0" />
             </font>
         </Label>
-        <Button layoutX="878.0" layoutY="705.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Supprimer" textFill="#984646">
+        <Button fx:id="butonSupprimer" layoutX="1017.0" layoutY="706.0" mnemonicParsing="false" onMouseClicked="#supprimerClicked" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Supprimer" textFill="#984646">
             <font>
                 <Font name="Sylfaen" size="16.0" />
             </font></Button>
-        <Button layoutX="1087.0" layoutY="705.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Modifier" textFill="#887940">
+        <Button fx:id="butonModifier" layoutX="1158.0" layoutY="705.0" mnemonicParsing="false" onMouseClicked="#modifierClicked" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Modifier" textFill="#887940">
             <font>
                 <Font name="Sylfaen" size="16.0" />
             </font></Button>
-        <Button layoutX="1295.0" layoutY="705.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Ajouter" textFill="#3f7342">
+        <Button fx:id="butonAjouter" layoutX="1295.0" layoutY="705.0" mnemonicParsing="false" onMouseClicked="#ajouterClicked" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Ajouter" textFill="#3f7342">
             <font>
                 <Font name="Sylfaen" size="16.0" />
             </font></Button>
-        <TextField layoutX="876.0" layoutY="117.0" prefHeight="25.0" prefWidth="534.0" style="-fx-background-color: #fff7e2;" />
-      <TextField layoutX="876.0" layoutY="327.0" prefHeight="25.0" prefWidth="534.0" style="-fx-background-color: #fff7e2;" />
-      <Label layoutX="876.0" layoutY="299.0" prefHeight="25.0" prefWidth="99.0" text="Image" textFill="#fff7e2">
-         <font>
-            <Font name="Sylfaen" size="16.0" />
-         </font>
-      </Label>
+        <Button fx:id="butonAnnuler" layoutX="878.0" layoutY="706.0" mnemonicParsing="false" onMouseClicked="#annulerClicked" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Annuler" textFill="#984646">
+            <font>
+                <Font name="Sylfaen" size="16.0" />
+            </font>
+        </Button>
+        <TextField fx:id="textFieldNom" onKeyPressed="#changementValeurs" layoutX="876.0" layoutY="117.0" prefHeight="25.0" prefWidth="534.0" style="-fx-background-color: #fff7e2;" />
     </children>
 </Pane>

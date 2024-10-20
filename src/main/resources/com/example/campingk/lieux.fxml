@@ -30,7 +30,7 @@
                 </Button>
             </children>
         </Pane>
-        <ListView layoutX="14.0" layoutY="66.0" prefHeight="737.0" prefWidth="813.0" style="-fx-background-color: #fff7e2;" />
+        <ListView fx:id="listView" layoutX="14.0" layoutY="66.0" onMouseClicked="#listViewClicked" prefHeight="737.0" prefWidth="813.0" style="-fx-background-color: #fff7e2;" />
         <Label layoutX="877.0" layoutY="92.0" prefHeight="25.0" prefWidth="99.0" text="Libelle" textFill="#fff7e2">
             <font>
                 <Font name="Sylfaen" size="16.0" />
@@ -46,8 +46,8 @@
                 <Font name="Sylfaen" size="16.0" />
             </font>
         </Label>
-        <TextField layoutX="876.0" layoutY="242.0" prefHeight="25.0" prefWidth="243.0" style="-fx-background-color: #fff7e2;" />
-        <TextField layoutX="1167.0" layoutY="242.0" prefHeight="25.0" prefWidth="243.0" style="-fx-background-color: #fff7e2;" />
+        <TextField fx:id="textFieldPays" layoutX="876.0" layoutY="242.0" onKeyPressed="#changementValeurs" prefHeight="25.0" prefWidth="243.0" style="-fx-background-color: #fff7e2;" />
+        <TextField fx:id="textFieldVille" layoutX="1167.0" layoutY="242.0" onKeyPressed="#changementValeurs" prefHeight="25.0" prefWidth="243.0" style="-fx-background-color: #fff7e2;" />
         <Label layoutX="878.0" layoutY="282.0" prefHeight="25.0" prefWidth="156.0" text="Numéro de Rue" textFill="#fff7e2">
             <font>
                 <Font name="Sylfaen" size="16.0" />
@@ -58,27 +58,31 @@
                 <Font name="Sylfaen" size="16.0" />
             </font>
         </Label>
-        <TextField layoutX="877.0" layoutY="307.0" prefHeight="25.0" prefWidth="243.0" style="-fx-background-color: #fff7e2;" />
-        <TextField layoutX="1168.0" layoutY="307.0" prefHeight="25.0" prefWidth="243.0" style="-fx-background-color: #fff7e2;" />
-        <TextField layoutX="878.0" layoutY="428.0" prefHeight="25.0" prefWidth="534.0" style="-fx-background-color: #fff7e2;" />
+        <TextField fx:id="textFieldNomRue" layoutX="1168.0" layoutY="307.0" onKeyPressed="#changementValeurs" prefHeight="25.0" prefWidth="243.0" style="-fx-background-color: #fff7e2;" />
+        <TextField fx:id="textFieldCoordonnees" layoutX="876.0" layoutY="435.0" onKeyPressed="#changementValeurs" prefHeight="25.0" prefWidth="534.0" style="-fx-background-color: #fff7e2;" />
         <Label layoutX="878.0" layoutY="400.0" prefHeight="25.0" prefWidth="99.0" text="Coordonnées" textFill="#fff7e2">
             <font>
                 <Font name="Sylfaen" size="16.0" />
             </font>
         </Label>
-        <TextField layoutX="877.0" layoutY="307.0" prefHeight="25.0" prefWidth="243.0" style="-fx-background-color: #fff7e2;" />
-        <Button layoutX="878.0" layoutY="705.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Supprimer" textFill="#984646">
+        <TextField fx:id="textFieldNumRue" layoutX="877.0" layoutY="307.0" onKeyPressed="#changementValeurs" prefHeight="25.0" prefWidth="243.0" style="-fx-background-color: #fff7e2;" />
+        <Button fx:id="butonSupprimer" layoutX="1017.0" layoutY="706.0" mnemonicParsing="false" onMouseClicked="#supprimerClicked" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Supprimer" textFill="#984646">
             <font>
                 <Font name="Sylfaen" size="16.0" />
             </font></Button>
-        <Button layoutX="1087.0" layoutY="705.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Modifier" textFill="#887940">
+        <Button fx:id="butonModifier" layoutX="1158.0" layoutY="705.0" mnemonicParsing="false" onMouseClicked="#modifierClicked" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Modifier" textFill="#887940">
             <font>
                 <Font name="Sylfaen" size="16.0" />
             </font></Button>
-        <Button layoutX="1295.0" layoutY="705.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Ajouter" textFill="#3f7342">
+        <Button fx:id="butonAjouter" layoutX="1295.0" layoutY="705.0" mnemonicParsing="false" onMouseClicked="#ajouterClicked" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Ajouter" textFill="#3f7342">
             <font>
                 <Font name="Sylfaen" size="16.0" />
             </font></Button>
-      <TextField layoutX="876.0" layoutY="117.0" prefHeight="25.0" prefWidth="534.0" style="-fx-background-color: #fff7e2;" />
+        <Button fx:id="butonAnnuler" layoutX="878.0" layoutY="706.0" mnemonicParsing="false" onMouseClicked="#annulerClicked" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #fff7e2;" text="Annuler" textFill="#984646">
+            <font>
+                <Font name="Sylfaen" size="16.0" />
+            </font>
+        </Button>
+      <TextField fx:id="textFieldLibelle" layoutX="876.0" layoutY="117.0" onKeyPressed="#changementValeurs" prefHeight="25.0" prefWidth="534.0" style="-fx-background-color: #fff7e2;" />
     </children>
 </Pane>
